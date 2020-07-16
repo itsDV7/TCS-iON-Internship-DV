@@ -2,6 +2,7 @@
 TCS Remote Internship. 210 Hours. Project Work.
 - **Name:** Divyansh Chaudhary
 - **Institute:** Amity University Noida
+- **Project Title:** Automate identification and recognition of handwritten text from an image.
 ## Getting Started
 To run the project on your local machine, you will require the exact build of packages as some of the functions used in this project work only on these builds and are updated/removed in latest builds.
 ### Prerequsites
