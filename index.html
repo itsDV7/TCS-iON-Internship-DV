@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tcs-ion-internship-dv by itsDV7</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Tcs-ion-internship-dv</h1>
+        <p>TCS Remote Internship. 210 Hours. Project Work.</p>
+
+        <p class="view"><a href="https://github.com/itsDV7/TCS-iON-Internship-DV">View the Project on GitHub <small>itsDV7/TCS-iON-Internship-DV</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/itsDV7/TCS-iON-Internship-DV/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/itsDV7/TCS-iON-Internship-DV/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/itsDV7/TCS-iON-Internship-DV">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="tcs-ion-remote-internship" class="anchor" href="#tcs-ion-remote-internship" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TCS-iON-Remote-Internship</h1>
+<p>TCS Remote Internship. 210 Hours. Project Work.</p>
+<ul>
+<li>
+<strong>Name:</strong> Divyansh Chaudhary</li>
+<li>
+<strong>Institute:</strong> Amity University Noida</li>
+<li>
+<strong>Project Title:</strong> Automate identification and recognition of handwritten text from an image.</li>
+</ul>
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h2>
+<p>To run the project on your local machine, you will require the exact build of packages as some of the functions used in this project work only on these builds and are updated/removed in latest builds.</p>
+<h3>
+<a id="prerequsites" class="anchor" href="#prerequsites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prerequsites</h3>
+<ol>
+<li>Install <a href="https://www.python.org/downloads/release/python-376/">Python 3.7.6.</a>
+</li>
+<li>Add Python 3.7.6 to PATH.</li>
+<li>Install <a href="https://www.jetbrains.com/pycharm/download/#section=windows">PyCharm IDE Community Version.</a>
+</li>
+<li>Add launcher directory to PATH during installation.</li>
+<li>Create a blank project with base interpreter. <code>Python37/python.exe</code>
+</li>
+</ol>
+<h3>
+<a id="packages" class="anchor" href="#packages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Packages</h3>
+<pre><code>- Keras         2.3.1
+- matplotlib    3.1.3
+- numpy         1.18.1
+- opencv-python 4.2.0.32
+- sklearn       0.0
+- tensorflow    2.0.0
+</code></pre>
+<h3>
+<a id="instructions" class="anchor" href="#instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instructions</h3>
+<ol>
+<li>Download <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/blob/master/File1.py">File1.py</a>, <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/blob/master/File2.py">File2.py</a> and <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/blob/master/TestData.zip">TestData.zip</a> available in the <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/">repo.</a>
+</li>
+<li>Add them to your project directory.</li>
+<li>Execute <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/blob/master/File1.py">File1.py</a>
+</li>
+<li>Execute <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/blob/master/File2.py">File2.py</a>
+</li>
+<li>Use your webcam to test the digits.</li>
+</ol>
+<h2>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h2>
+<p>After executing <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/blob/master/File1.py">File1.py</a>, the result of your model can be seen as follows:</p>
+<pre><code>Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 28, 28, 60)        1560      
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 24, 24, 60)        90060     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 12, 12, 60)        0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 10, 10, 30)        16230     
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 8, 8, 30)          8130      
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 4, 4, 30)          0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 4, 4, 30)          0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 480)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 500)               240500    
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 500)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                5010      
+=================================================================
+Total params: 361,490
+Trainable params: 361,490
+Non-trainable params: 0
+</code></pre>
+<p>The accuracy of the trained model can be checked from console:</p>
+<pre><code>Test Score =  0.003487161887470976
+Test Accuracy =  0.999015748500824
+</code></pre>
+<p>Finally, <a href="https://github.com/itsDV7/TCS-iON-Remote-Internship/blob/master/File2.py">File2.py</a> is executed to test the model with new examples.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/itsDV7">itsDV7</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
